@@ -1,8 +1,6 @@
 jasmine-node
 ======
 
-[![Build Status](https://secure.travis-ci.org/spaghetticode/jasmine-node.png)](http://travis-ci.org/spaghetticode/jasmine-node)
-
 This node.js module makes the wonderful Pivotal Lab's jasmine
 (http://github.com/pivotal/jasmine) spec framework available in
 node.js.
@@ -10,10 +8,13 @@ node.js.
 jasmine
 -------
 
-Version 1.3.1 of Jasmine is currently included with node-jasmine.
+Version 1.3.1 of Jasmine is currently included with node-jasmine. This is a forked version from the
+Karma project: (https://github.com/karma-runner/karma-jasmine), which allows you to use the 
+`ddescribe` and `iit` functions to run individual suites or specs.
 
 what's new
 ----------
+*  Using jasmine forked from karma.
 *  Teamcity Reporter reinstated.
 *  Ability to specify multiple files to test via list in command line
 *  Ability to suppress stack trace with <code>--noStack</code>
@@ -33,7 +34,7 @@ install
 
 To install the latest official version, use NPM:
 
-    npm install jasmine-node -g
+    npm install jasmine-node-karma -g
 
 To install the latest _bleeding edge_ version, clone this repository and check
 out the `beta` branch.
@@ -48,12 +49,12 @@ can use sub-directories to better organise your specs.
 
 If you have installed the npm package, you can run it with:
 
-    jasmine-node spec/
+    jasmine-node-karma spec/
 
 If you aren't using npm, you should add `pwd`/lib to the $NODE_PATH
 environment variable, then run:
 
-    node lib/jasmine-node/cli.js
+    node lib/jasmine-node-karma/cli.js
 
 
 You can supply the following arguments:
@@ -82,7 +83,7 @@ Individual files to test can be added as bare arguments to the end of the args.
 
 Example:
 
-`jasmine-node --coffee spec/AsyncSpec.coffee spec/CoffeeSpec.coffee spec/SampleSpecs.js`
+`jasmine-node-karma --coffee spec/AsyncSpec.coffee spec/CoffeeSpec.coffee spec/SampleSpecs.js`
 
 async tests
 -----------
