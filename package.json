@@ -1,8 +1,9 @@
 {
-  "name": "jasmine-node",
-  "version": "1.6.0",
+  "name": "jasmine-node-karma",
+  "version": "1.6.1",
   "description": "DOM-less simple JavaScript BDD testing framework for Node",
   "contributors": [
+    "Vojta Jina <vojta.jina@gmail.com>",
     "Chris Moultrie <chris@moultrie.org>"
   ],
   "homepage": [
@@ -11,14 +12,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mhevery/jasmine-node.git"
+    "url": "https://github.com/HuzuTech/jasmine-node-karma.git"
   },
   "keywords": [
     "testing",
     "bdd"
   ],
   "author": "Misko Hevery <misko@hevery.com>",
-  "maintainers": "Martin Häger <martin.haeger@gmail.com>",
+  "maintainers": "Robert Dallas Gray <robert.dallas.gray@huzutech.com>",
   "licenses": [
     "MIT"
   ],
@@ -30,11 +31,11 @@
     "underscore": ">= 1.3.1",
     "gaze": "~0.3.2"
   },
-  "bin": "bin/jasmine-node",
+  "bin": "bin/jasmine-node-karma",
   "preferGlobal": true,
-  "main": "lib/jasmine-node",
+  "main": "lib/jasmine-node-karma",
   "scripts": {
-    "test": "node lib/jasmine-node/cli.js spec"
+    "test": "node lib/jasmine-node-karma/cli.js spec"
   },
   "devDependencies": {}
 }
