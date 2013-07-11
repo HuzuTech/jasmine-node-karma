@@ -1,4 +1,4 @@
-var jasmineNode = require(__dirname + "/../lib/jasmine-node/reporter").jasmineNode;
+var jasmineNode = require(__dirname + "/../lib/jasmine-node-karma/reporter").jasmineNode;
 
 describe('TerminalReporter', function() {
   beforeEach(function() {
